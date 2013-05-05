@@ -12,6 +12,7 @@
 #include "timeout.h"
 //#include <stdio.h>
 #include <avr/eeprom.h>
+#include "config.h"
 
 // Array of readings: we only register the last 120 minutes of rotations passed. In one minute we can register no more than 255 rotations, which should more than enough
 volatile uint8_t readings[120];
@@ -23,10 +24,6 @@ volatile uint8_t readings[120];
 #include <inttypes.h>
 
 
-#define ADCHIGH 840
-#define PULSE_PER_KWH 375
-#define MIN_MS_COUNT 200
-#define TIME_BETWEEN_POLLS 10 // Time between polls in ms. If we poll every 10ms, we poll every 3.6degrees of the disc in case of a rotation of 1 second.
 
 const float whPerPulse = 1000.0f/PULSE_PER_KWH;
 volatile uint32_t miliSecondsElapsed = 0;
@@ -100,18 +97,6 @@ ISR(TIMER1_COMPA_vect)
 
 
 
-// please modify the following two lines. mac and ip have to be unique
-// in your local area network. You can not have the same numbers in
-// two devices:
-// how did I get the mac addr? Translate the first 3 numbers into ascii is: TUX
-static uint8_t mymac[6] = {0x54,0x55,0x58,0x10,0x00,0x29};
-static uint8_t myip[4] = {192,168,2,99}; // aka http://10.0.0.29/
-
-// server listen port for www
-#define MYWWWPORT 80
-
-// global packet buffer
-#define BUFFER_SIZE 700
 static uint8_t buf[BUFFER_SIZE+1];
 
 uint16_t http200ok(void)
