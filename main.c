@@ -16,7 +16,7 @@
 // Array of readings: we only register the last 120 minutes of rotations passed. In one minute we can register no more than 255 rotations, which should more than enough
 volatile uint8_t readings[120];
 
-// --------------- Begin TCRT zooi --------------------
+// --------------- Begin TCRT stuff --------------------
 
 #include "usart.h"
 #include <avr/interrupt.h>
@@ -96,7 +96,7 @@ ISR(TIMER1_COMPA_vect)
   }
 }
 
-// --------------- Einde TCRT zooi --------------------
+// --------------- End of TCRT stuff --------------------
 
 
 
