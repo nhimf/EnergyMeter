@@ -1,3 +1,10 @@
+/*
+ * Name: usart.c
+ * Author: Maarten van Ingen
+ * Copyright: 2013, Maarten van Ingen
+ * License: See LICENSE file
+*/
+
 #include "usart.h"
 
 volatile unsigned char value;

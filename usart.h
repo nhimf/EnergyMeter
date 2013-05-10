@@ -1,3 +1,10 @@
+/*
+ * Name: usart.h
+ * Author: Maarten van Ingen
+ * Copyright: 2013, Maarten van Ingen
+ * License: See LICENSE file
+*/
+
 #ifndef USART_H
 #define USART_H
 

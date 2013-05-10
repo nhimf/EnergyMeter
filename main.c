@@ -1,9 +1,12 @@
 /*
+ * Name: main.c
  * Author: Maarten van Ingen
+ * Copyright: 2013, Maarten van Ingen
+ * License: See LICENSE file
  * Description: Energymeter Readout module with integrated webserver
- *
- * Webserver & enc28j60 driver by  Guido Socher http://tuxgraphics.org/electronics/
+ * Webserver & enc28j60 driver by Guido Socher http://tuxgraphics.org/electronics/
 */
+
 #include <avr/io.h>
 #include <stdlib.h>
 #include <string.h>
@@ -149,7 +152,7 @@ uint16_t printWelcomeHTML ( uint8_t *buf )
 {
   uint16_t plen;
   plen=http200ok();
-  plen=fill_tcp_data_p ( buf, plen, PSTR("<!DOCTYPE html>\n <html>\n <body>\n <p>Welcome to EnergyMeter v0.1</p>\n <p>Select what data to see on the left</p>\n <p>(c)2013 Maarten van Ingen\n </body>\n </html>\n" ) );
+  plen=fill_tcp_data_p ( buf, plen, PSTR("<!DOCTYPE html>\n <html>\n <body>\n <p>Welcome to EnergyMeter v0.1</p>\n <p>Select which data to see on the left</p>\n <p>(c)2013 Maarten van Ingen\n </body>\n </html>\n" ) );
   return( plen );
 }
 

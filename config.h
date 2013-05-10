@@ -1,3 +1,10 @@
+/*
+ * Name: config.h
+ * Author: Maarten van Ingen
+ * Copyright: 2013, Maarten van Ingen
+ * License: See LICENSE file
+*/
+
 #ifndef CONFIG_H
 #define CONFIG_H
 
