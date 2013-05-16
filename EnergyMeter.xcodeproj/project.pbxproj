@@ -1,0 +1,118 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		FEACF6F61745372C00A1C619 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		FEACF6F71745372C00A1C619 /* enc28j60.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc28j60.c; sourceTree = "<group>"; };
+		FEACF6F81745372C00A1C619 /* enc28j60.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc28j60.h; sourceTree = "<group>"; };
+		FEACF6F91745372C00A1C619 /* ip_arp_udp_tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip_arp_udp_tcp.c; sourceTree = "<group>"; };
+		FEACF6FA1745372C00A1C619 /* ip_arp_udp_tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_arp_udp_tcp.h; sourceTree = "<group>"; };
+		FEACF6FB1745373D00A1C619 /* ip_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_config.h; sourceTree = "<group>"; };
+		FEACF6FC1745373D00A1C619 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FEACF6FD1745373D00A1C619 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		FEACF6FE1745373D00A1C619 /* timeout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeout.h; sourceTree = "<group>"; };
+		FEACF6FF1745373D00A1C619 /* usart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usart.c; sourceTree = "<group>"; };
+		FEACF7001745373D00A1C619 /* usart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usart.h; sourceTree = "<group>"; };
+		FEACF7041745382E00A1C619 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4079523B0CEA382200E202DC = {
+			isa = PBXGroup;
+			children = (
+				FEACF7041745382E00A1C619 /* Makefile */,
+				FEACF6FB1745373D00A1C619 /* ip_config.h */,
+				FEACF6FC1745373D00A1C619 /* LICENSE */,
+				FEACF6FD1745373D00A1C619 /* net.h */,
+				FEACF6FE1745373D00A1C619 /* timeout.h */,
+				FEACF6FF1745373D00A1C619 /* usart.c */,
+				FEACF7001745373D00A1C619 /* usart.h */,
+				FEACF6F61745372C00A1C619 /* config.h */,
+				FEACF6F71745372C00A1C619 /* enc28j60.c */,
+				FEACF6F81745372C00A1C619 /* enc28j60.h */,
+				FEACF6F91745372C00A1C619 /* ip_arp_udp_tcp.c */,
+				FEACF6FA1745372C00A1C619 /* ip_arp_udp_tcp.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		407952600CEA391500E202DC /* firmware */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = $ACTION;
+			buildConfigurationList = 407952610CEA393300E202DC /* Build configuration list for PBXLegacyTarget "firmware" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = firmware;
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		4079523D0CEA382200E202DC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4079523E0CEA382200E202DC /* Build configuration list for PBXProject "EnergyMeter" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4079523B0CEA382200E202DC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				407952600CEA391500E202DC /* firmware */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		407952400CEA382200E202DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		407952630CEA393300E202DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$(PATH):/usr/local/CrossPack-AVR/bin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4079523E0CEA382200E202DC /* Build configuration list for PBXProject "EnergyMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407952400CEA382200E202DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407952610CEA393300E202DC /* Build configuration list for PBXLegacyTarget "firmware" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407952630CEA393300E202DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4079523D0CEA382200E202DC /* Project object */;
+}
